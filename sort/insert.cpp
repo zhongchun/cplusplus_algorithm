@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-void insertSort(int A[], int len)
+void insert(int A[], int len)
 {
 	for (int i=1; i<len; i++) 
 	{
@@ -19,7 +19,7 @@ void insertSort(int A[], int len)
 	}
 }
 
-void printArray(int A[], int len) 
+void print_array(int A[], int len) 
 {
 	for (int i=0; i<len; i++)
 	{
@@ -30,9 +30,12 @@ void printArray(int A[], int len)
 
 int main()
 {
-	// int A[] = {3, 1, 5, 2, 7};
-	int A[] = {3, 1};
-	insertSort(A, 2);
-	printArray(A, 2);
-	return 0;	
+    int A[] = {8, 7, 3, 4, 6, 2, 9, 1};
+    int len = 8;
+    cout << "Before sort: " << endl;
+    print_array(A, len);
+    insert(A, len);
+    cout << "After sort: " << endl;
+    print_array(A, len);
+    return 0;
 }

@@ -1,5 +1,5 @@
 /**
- * selection sort
+ * select sort
  *
  */
 
@@ -19,7 +19,7 @@ void swap(int *a, int *b) {
     *a = tmp;
 }
 
-void selection(int A[], int len) {
+void select(int A[], int len) {
    for (int i=0; i<len-1; i++) {
        int min= i;
        for (int j=i+1; j<len; j++) {
@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
     int len = 8;
     cout << "Before sort: " << endl;
     print_array(A, len);
-    selection(A, len);
+    select(A, len);
     cout << "After sort: " << endl;
     print_array(A, len);
     return 0;

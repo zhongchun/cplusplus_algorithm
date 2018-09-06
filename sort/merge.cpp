@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-void printArray(int A[], int len) {
+void pring_array(int A[], int len) {
 	for (int i=0; i<len; i++) {
 		cout << A[i] << " ";
 	}
@@ -62,18 +62,18 @@ void mergeSort(int A[], int p, int r) {
 int main(int argc, char *argv[]) {
     int A[] = {1, 3, 8, 2, 4, 5, 7};    
     cout << "=====================================" << endl;
-    printArray(A, 7);
+    pring_array(A, 7);
     merge(A, 0, 2, 6);
-    printArray(A, 7);
+    pring_array(A, 7);
     int B[] = {1, 3, 5, 8, 9, 2, 7};    
     cout << "=====================================" << endl;
-    printArray(B, 7);
+    pring_array(B, 7);
     merge(B, 0, 4, 6);
-    printArray(B, 7);
+    pring_array(B, 7);
     cout << "=====================================" << endl;
     int C[] = {89, 32, 45, 1, 3, 8, 0, 99};
-    printArray(C, 8);
+    pring_array(C, 8);
     mergeSort(C, 0, 7);
-    printArray(C, 8);
+    pring_array(C, 8);
     return 0;
 }
