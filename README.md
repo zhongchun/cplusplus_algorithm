@@ -6,4 +6,4 @@ Algorithms by c plus plus.
 sort algorithms.
 
 ## other algorithms
-
+some other algorithms.
