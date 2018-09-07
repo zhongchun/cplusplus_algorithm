@@ -13,7 +13,7 @@ void print_array(int A[], int len) {
 }
 
 void shell_sort(int A[], int len) {
-	for (int h=len/2; h>=1; h=h/2) {
+	for (int h=len/2; h>0; h=h/2) {
 		for (int i=h; i<len; i+=h ) {
 			int key = A[i];
 			int j = i - h;
