@@ -1,2 +1,2 @@
 # cplusplus_algorithm
-cplusplus algorithm
+Algorithms by c plus plus.
