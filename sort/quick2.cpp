@@ -12,22 +12,18 @@ void print_array(int A[], int len) {
 	cout << endl;
 }
 
-void swap(int *a, int *b) {
-    int tmp = *b;
-    *b = *a; 
-    *a = tmp;
-}
-
 int partition(int A[], int p, int q) {
     int i = p;
-    int x = A[p];
-    for (int j=p+1; j<=q; j++) {
-        if (A[j] <= x) {
-            i++;
-            swap(A[j], A[i]);
-        }
-    }
-    swap(A[i], A[p]);
+	int j = q; 
+	int pivot = p;
+    int x = A[pivot];
+	while (i < j) {
+		while (A[j] >= x && j > i) j--;
+		A[i] = A[j];
+		while (A[i] <= x && i < j) i++;
+		A[j] = A[i];
+	}
+	A[i] = x;
     return i;
 }
 
